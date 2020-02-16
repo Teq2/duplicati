@@ -1,7 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duplicati", "Duplicati\GUI\Duplicati.csproj", "{1470F75F-D364-4010-91D0-FD4DDA1C5159}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB} = {D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}
+		{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD} = {352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duplicati.Library.Utility", "Duplicati\Library\Utility\Duplicati.Library.Utility.csproj", "{DE3E5D4C-51AB-4E5E-BEE8-E636CEBFBA65}"
 EndProject
@@ -55,11 +61,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duplicati.Library.Backend.S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duplicati.Library.Backend.GoogleDocs", "Duplicati\Library\Backend\GoogleDocs\Duplicati.Library.Backend.GoogleDocs.csproj", "{42C91180-11EB-4590-82EA-80FE9D4DEBEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duplicati.Library.OAuthHelper", "Duplicati\Library\Backend\OAuthHelper\Duplicati.Library.OAuthHelper.csproj", "{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duplicati.Library.Backend.GoogleDrive", "Duplicati\Library\Backend\GoogleDrive_v2\Duplicati.Library.Backend.GoogleDrive.csproj", "{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}"
+EndProject
 Global
-	GlobalSection(SubversionScc) = preSolution
-		Svn-Managed = True
-		Manager = AnkhSVN - Subversion Support for Visual Studio
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -527,8 +533,51 @@ Global
 		{42C91180-11EB-4590-82EA-80FE9D4DEBEC}.Test|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{42C91180-11EB-4590-82EA-80FE9D4DEBEC}.Test|Mixed Platforms.Build.0 = Release|Any CPU
 		{42C91180-11EB-4590-82EA-80FE9D4DEBEC}.Test|x86.ActiveCfg = Release|Any CPU
+		{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}.Debug|x86.Build.0 = Debug|Any CPU
+		{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}.Release|x86.ActiveCfg = Release|Any CPU
+		{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}.Release|x86.Build.0 = Release|Any CPU
+		{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}.Test|Any CPU.ActiveCfg = Release|Any CPU
+		{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}.Test|Any CPU.Build.0 = Release|Any CPU
+		{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}.Test|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}.Test|Mixed Platforms.Build.0 = Release|Any CPU
+		{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}.Test|x86.ActiveCfg = Release|Any CPU
+		{D4C37C33-5E73-4B56-B2C3-DC4A6BAA36BB}.Test|x86.Build.0 = Release|Any CPU
+		{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}.Debug|x86.Build.0 = Debug|Any CPU
+		{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}.Release|x86.ActiveCfg = Release|Any CPU
+		{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}.Release|x86.Build.0 = Release|Any CPU
+		{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}.Test|Any CPU.ActiveCfg = Release|Any CPU
+		{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}.Test|Any CPU.Build.0 = Release|Any CPU
+		{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}.Test|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}.Test|Mixed Platforms.Build.0 = Release|Any CPU
+		{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}.Test|x86.ActiveCfg = Release|Any CPU
+		{352F3EFF-986B-4237-B4C3-8C7C6CB3DDFD}.Test|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07877581-F66F-42DE-B192-0D9661AAB57D}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
 	EndGlobalSection
 EndGlobal
